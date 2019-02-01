@@ -96,7 +96,7 @@ function data(txt){
 }	
 
 function sendData() { // send data to Arduino
-	 var data = stringToBytes("1");
+	 var data = stringToBytes("on");
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 	
